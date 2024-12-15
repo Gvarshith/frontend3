@@ -1,0 +1,225 @@
+@font-face {
+  font-family: "CustomFont"; /* Name to reference in CSS */
+  src: url("/assets/fonts/Karla-VariableFont_wght.ttf") format("truetype"); /* Corrected format */
+  font-weight: normal; /* Optional: Set specific weight */
+  font-style: normal; /* Optional: Set specific style */
+}
+
+body {
+  margin: 0; /* Remove default margin to properly center */
+  background-color: #e2f1e7;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.row {
+  display: flex;
+  gap: 17%;
+}
+.row input {
+  width: calc(125% - 5px);
+}
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+#gen {
+  width: 50%;
+  border: 0.5px solid#d1d6d5;
+  margin-right: 10px;
+  border-radius: 5px;
+  height: 10%;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+#gen input {
+margin-left: -42%;
+margin-top: 6%;
+margin-right: 0;
+}
+#gen label {
+  margin-bottom: 0;
+  height: 72%;
+  margin-left: -45%;
+}
+#Tech {
+    width: 50%;
+    border: 0.5px solid#d1d6d5;
+    margin-right: 10px;
+    border-radius: 5px;
+    height: 10%;
+    display: inline-flex;
+    align-items: center;
+}
+#Tech input {
+    margin-left: -42%;
+    margin-top: 6%;
+    margin-right: 0;
+}
+#Tech label {
+    margin-bottom: 0;
+    height: 72%;
+    margin-left: -45%;
+}
+#querry {
+    display: flex;
+    /* Add spacing between the divs */
+  }
+.container {
+  border: 1px solid #ebeeed;
+  width: 50%;
+  padding-bottom: 2%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for better visibility */
+  margin-bottom: 5%;
+  margin-top: 5%;
+  font-family: "CustomFont", sans-serif;
+}
+#term {
+  display: flex;
+}
+#term input {
+  width: 25px;
+}
+h2 {
+  margin-left: 7%;
+}
+button {
+  width: 105%;
+  background-color: #0c7c69;
+}
+.N {
+  margin-top: -5%;
+  display: none;
+  color: red;
+}
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  accent-color: #0c7c69 !important;
+}
+#customAlert {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 25px; /* Adjust top space as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(49, 48, 48);
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  z-index: 1000; /* Ensure it appears above other content */
+  width: auto;
+  height: 10%;
+  font-family: "CustomFont", sans-serif;
+
+}
+
+.alert-content h3 {
+  margin-top: 0;
+  margin-bottom: 3%;
+}
+.alert-content img {
+  margin-bottom: -3px;
+  margin-right: 4px;
+}
+.alert-content p {
+  margin-top: 0;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: 80%;
+  }
+  .row {
+    display: block;
+  }
+  .row input {
+    width: calc(85% - 5px);
+  }
+  input, select, textarea {
+    width: 85%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container{
+    padding: 3%;
+}
+#querry {
+    display: block;
+    margin-bottom: 10px;
+  }
+  #gen  {
+    width: 90%;
+    margin-bottom: 1%;
+    display:flex;
+  }
+  #gen label {
+    margin-bottom: 0;
+    height: 72%;
+    margin-left: -38%;
+}
+  #gen input {
+    margin-left: -31%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#Tech  {
+    width: 90%;
+    margin-bottom: 1%;
+    display:flex;
+   
+  }
+  #Tech label {
+    margin-bottom: 0;
+    height: 72%;
+    margin-left: -38%;
+    margin-top: 1%;
+}
+  #Tech input {
+    margin-left: -31%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#term input {
+    width: 20px;
+    margin-right: 5%;
+}
+#customAlert {
+    width: 80%;
+  }
+}
